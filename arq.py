@@ -1,16 +1,13 @@
 import csv
 from urllib.request import urlopen
 from bs4 import BeautifulSoup as bs
-from time import sleep
-
 
 for i in range(4,10):
     html = 'file:///home/jozemaria/Documentos/Scraping/html/201'
     html = f'{html}{i}.html'
     array = urlopen(html)
-
-
     bsObj = bs(array)
+
     table = bsObj.find("table",{"class":"dataTable"})
     rows = table.find_all("tr")
 
@@ -27,5 +24,4 @@ for i in range(4,10):
                 # csvRow = [csv.replace('"', ',') for csv in csvRow]
             writer.writerow(csvRow)
     finally:
-        csvFile.close()
-
+        csvFile.close() 
