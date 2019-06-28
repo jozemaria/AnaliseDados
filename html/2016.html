@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Recebimento de recursos por favorecido - Portal da transparência</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async="" src="2016_files/analytics.js"></script><script async="" src="2016_files/js.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-1665737-25');
+    </script>
+
+    <!-- BARRA DO TOPO DO GOVERNO -->
+    <link rel="stylesheet" href="2016_files/font-awesome.css">
+    <link rel="stylesheet" href="2016_files/css.css" type="text/css">
+    <link rel="stylesheet" href="2016_files/bootstrap.css">
+
+    <!--[if IE]>
+    <style>
+        select {
+            padding: 0px 1% !important;
+            background-image: none !important;
+        }
+    </style>
+    <![endif]-->
+
+    <link rel="stylesheet" href="2016_files/layoutStyle.css">
+    <link rel="stylesheet" href="2016_files/timeline.css">
+
+    <link rel="icon" href="data:;base64,=">
+
+    <script type="text/javascript" src="2016_files/jquery-1.js"></script>
+    
+</head>
+<body style="font-size: 14px;">
+
+<header id="header" role="banner">
+    <section class="container">
+        <ul role="menubar">
+            <li role="menuitem"><a href="#aconteudo" accesskey="1">Ir para o conteúdo <span>1</span></a></li>
+            <li role="menuitem"><a href="#amenu-navegacao" accesskey="2">Ir para o menu <span>2</span></a></li>
+            <li role="menuitem"><a href="#termoBuscaPortal" accesskey="3">Ir para a busca <span>3</span></a></li>
+            <li role="menuitem"><a href="#arodape" accesskey="4">Ir para o rodapé <span>4</span></a></li>
+        </ul>
+
+        <ul class="menu-borda" role="menubar">
+            <li role="menuitem"><a href="#" accesskey="5" id="aumentar-fonte">A+</a></li>
+            <li role="menuitem"><a href="#" accesskey="6" id="diminuir-fonte">A-</a></li>
+            <li role="menuitem"><a href="#" accesskey="7">ACESSIBILIDADE</a></li>
+            <li role="menuitem"><a href="#" accesskey="8" id="alto-contraste">ALTO CONTRASTE</a></li>
+            <li role="menuitem"><a href="http://transparencia.gov.br/mapa-do-site" accesskey="9">MAPA DO SITE</a></li>
+        </ul>
+
+        <div class="logo">
+            <h1><a href="http://transparencia.gov.br/">Portal da Transparência</a></h1>
+            <span>CONTROLADORIA-GERAL DA UNIÃO</span>
+        </div>
+
+            <div>
+                <form id="form-busca-topo" class="form-busca-topo" action="/busca" method="get">
+                    <fieldset>
+                        <legend>Formulário de busca</legend>
+
+                        <label for="termoBuscaPortal" class="sr-only">Busque por órgão, cidade, CNPJ, servidor...</label>
+                        <input id="termoBuscaPortal" name="termo" placeholder="Busque por órgão, cidade, CNPJ, servidor..." type="text">
+
+                        <button type="submit" aria-label="Enviar dados do formulário de busca"><span class="sr-only">Buscar</span><i class="glyphicon glyphicon-search"></i></button>
+                    </fieldset>
+                </form>
+            </div>
+
+    </section>
+
+<nav id="amenu-navegacao" class="menu-navegacao" role="navigation">
+    <div class="container container--tipo-b">
+        <button type="button" id="botaoMenu"><i class="glyphicon glyphicon-menu-hamburger"></i></button>
+        <div class="menu-wrapper" style="float: left;">
+            <ul role="menubar">
+                <li role="menuitem" aria-haspopup="true" class="has-submenu">
+                    <a href="#">Sobre o Portal</a>
+                    <ul role="menu" aria-hidden="true" aria-haspopup="true" class="is-submenu">
+                        <li role="menuitem"><a href="http://transparencia.gov.br/sobre/o-que-e-e-como-funciona" onclick="window.open('/sobre/o-que-e-e-como-funciona', '_self')">O que é e como funciona</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/sobre/o-que-voce-encontra-no-portal" onclick="window.open('/sobre/o-que-voce-encontra-no-portal', '_self')">O que você encontra no Portal</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/sobre/legislacao" onclick="window.open('/sobre/legislacao', '_self')">Legislação</a></li>
+                        <li role="menuitem" class="has-submenu" aria-haspopup="true">
+                            <a href="#">Dados do portal</a>
+                            <ul role="menu" aria-hidden="true">
+                                <li><a href="http://transparencia.gov.br/origem-dos-dados" onclick="window.open('/origem-dos-dados', '_self')">Origem e atualização</a></li>
+                                <li><a href="http://transparencia.gov.br/download-de-dados" onclick="window.open('/download-de-dados', '_self')">Dados abertos</a></li>
+                                <li><a href="http://transparencia.gov.br/api-de-dados" onclick="window.open('/api-de-dados', '_self')">API de Dados</a></li>
+                                <li><a href="http://transparencia.gov.br/download-de-dados/historico" onclick="window.open('/download-de-dados/historico', '_self')">Histórico de dados</a></li>
+                                <li><a href="http://transparencia.gov.br/estatisticas" onclick="window.open('/estatisticas', '_self')">Estatísticas de acesso</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" class="has-submenu" aria-haspopup="true">
+                            <a href="#">Contato</a>
+                            <ul role="menu" aria-hidden="true">
+                                <li><a href="http://www.acessoainformacao.gov.br/" onclick="window.open('http://www.acessoainformacao.gov.br/', '_self')">Faça um pedido de informação para o Governo Federal</a></li>
+                                <li><a href="https://sistema.ouvidorias.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=1" onclick="window.open('https://sistema.ouvidorias.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=1', '_self')">Faça uma denúncia</a></li>
+                                <li><a href="https://sistema.ouvidorias.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx" onclick="window.open('https://sistema.ouvidorias.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx', '_self')">Registre suas sugestões, dúvidas e reclamações</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li role="menuitem" aria-haspopup="true" class="has-submenu">
+                    <a href="#">Painéis</a>
+                    <ul role="menu" aria-hidden="true" aria-haspopup="true" class="is-submenu">
+                        <li><a href="http://transparencia.gov.br/orcamento" onclick="window.open('/orcamento', '_self')">Orçamento anual</a></li>
+                        <li><a href="http://transparencia.gov.br/despesas" onclick="window.open('/despesas', '_self')">Despesas públicas</a></li>
+                        <li role="menuitem" class="has-submenu" aria-haspopup="true">
+                            <a href="#">Despesas em políticas públicas</a>
+                            <ul role="menu" aria-hidden="true">
+                                <li><a href="http://transparencia.gov.br/funcoes" onclick="window.open('/funcoes', '_self')">Por área de atuação (função)</a></li>
+                                <li><a href="http://transparencia.gov.br/programas-e-acoes/busca/lista" onclick="window.open('/programas-e-acoes/busca/lista', '_self')">Por programas e ações orçamentárias</a></li>
+                                <li><a href="http://transparencia.gov.br/programas-de-governo" onclick="window.open('/programas-de-governo', '_self')">Por programas de governo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://transparencia.gov.br/receitas" onclick="window.open('/receitas', '_self')">Receitas públicas</a></li>
+                        <li><a href="http://transparencia.gov.br/transferencias" onclick="window.open('/transferencias', '_self')">Recursos transferidos</a></li>
+                        <li><a href="http://transparencia.gov.br/cartoes" onclick="window.open('/cartoes', '_self')">Cartões de pagamento</a></li>
+                        <li><a href="http://transparencia.gov.br/licitacoes" onclick="window.open('/licitacoes', '_self')">Licitações</a></li>
+                        <li><a href="http://transparencia.gov.br/contratos" onclick="window.open('/contratos', '_self')">Contratos</a></li>
+                        <li><a href="http://transparencia.gov.br/convenios" onclick="window.open('/convenios', '_self')">Convênios e outros acordos</a></li>
+                        <li><a href="http://transparencia.gov.br/beneficios" onclick="window.open('/beneficios', '_self')">Benefícios ao cidadão</a></li>
+                        <li><a href="http://transparencia.gov.br/emendas" onclick="window.open('/emendas', '_self')">Emendas parlamentares</a></li>
+                        <li><a href="http://transparencia.gov.br/servidores" onclick="window.open('/servidores', '_self')">Servidores públicos</a></li>
+                        <li><a href="http://transparencia.gov.br/viagens" onclick="window.open('/viagens', '_self')">Viagens a serviço</a></li>
+                        <li><a href="http://transparencia.gov.br/imoveis-funcionais" onclick="window.open('/imoveis-funcionais', '_self')">Imóveis funcionais</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/sancoes" onclick="window.open('/sancoes', '_self')">Sanções</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/localidades" onclick="window.open('/localidades', '_self')">Localidades</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/orgaos-superiores" onclick="window.open('/orgaos-superiores', '_self')">Órgãos</a></li>
+                    </ul>
+                </li>
+                <li role="menuitem" aria-haspopup="true" class="has-submenu">
+                    <a href="#">Consultas Detalhadas</a>
+                    <ul role="menu" aria-hidden="true" aria-haspopup="true" class="is-submenu">
+                        <li role="menuitem"><a href="http://transparencia.gov.br/orcamento/lista-consultas" onclick="window.open('/orcamento/lista-consultas', '_self')">Orçamento</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/despesas/lista-consultas" onclick="window.open('/despesas/lista-consultas', '_self')">Despesas públicas</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/receitas/consulta" onclick="window.open('/receitas/consulta', '_self')">Receitas públicas</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/transferencias/consulta" onclick="window.open('/transferencias/consulta', '_self')">Recursos transferidos</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/cartoes/consulta" onclick="window.open('/cartoes/consulta', '_self')">Cartões de pagamento</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/licitacoes/consulta" onclick="window.open('/licitacoes/consulta', '_self')">Licitações</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/contratos/consulta" onclick="window.open('/contratos/consulta', '_self')">Contratos</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/convenios/consulta" onclick="window.open('/convenios/consulta', '_self')">Convênios e outros acordos</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/beneficios/consulta" onclick="window.open('/beneficios/consulta', '_self')">Benefícios ao cidadão</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/emendas/consulta" onclick="window.open('/emendas/consulta', '_self')">Emendas parlamentares</a></li>
+                        <li role="menuitem" class="has-submenu" aria-haspopup="true">
+                            <a href="#">Servidores públicos</a>
+                                <ul role="menu" aria-hidden="true">
+                                <li><a href="http://transparencia.gov.br/servidores/orgao" onclick="window.open('/servidores/orgao', '_self')">Por órgão</a></li>
+                                <li role="menuitem"><a href="http://transparencia.gov.br/servidores/consulta" onclick="window.open('/servidores/consulta', '_self')">Relação de vínculos</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/viagens/consulta" onclick="window.open('/viagens/consulta', '_self')">Viagens a serviço</a></li>
+                        <li role="menuitem" class="has-submenu" aria-haspopup="true">
+                            <a href="#">Imóveis funcionais</a>
+                            <ul role="menu" aria-hidden="true">
+                                <li><a href="http://transparencia.gov.br/imoveis-funcionais/imoveis" onclick="window.open('/imoveis-funcionais/imoveis', '_self')">Relação de imóveis</a></li>
+                                <li><a href="http://transparencia.gov.br/imoveis-funcionais/permissionarios" onclick="window.open('/imoveis-funcionais/permissionarios', '_self')">Relação de ocupantes</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/pessoa-fisica/busca/lista" onclick="window.open('/pessoa-fisica/busca/lista', '_self')">Pessoas físicas</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/pessoa-juridica/busca/lista" onclick="window.open('/pessoa-juridica/busca/lista', '_self')">Pessoas jurídicas</a></li>
+                        <li role="menuitem" class="has-submenu" aria-haspopup="true">
+                            <a href="#">Sanções</a>
+                            <ul role="menu" aria-hidden="true">
+                                <li><a href="http://transparencia.gov.br/sancoes/ceis" onclick="window.open('/sancoes/ceis', '_self')">Cadastro Nacional de Empresas Inidôneas e Suspensas (CEIS)</a></li>
+                                <li><a href="http://transparencia.gov.br/sancoes/cnep" onclick="window.open('/sancoes/cnep', '_self')">Cadastro Nacional de Empresas Punidas (CNEP)</a></li>
+                                <li><a href="http://transparencia.gov.br/sancoes/cepim" onclick="window.open('/sancoes/cepim', '_self')">Cadastro de Entidades Privadas sem Fins Lucrativos Impedidas (CEPIM)</a></li>
+                                <li><a href="http://transparencia.gov.br/sancoes/ceaf" onclick="window.open('/sancoes/ceaf', '_self')">Cadastro de Expulsões da Administração Federal (CEAF)</a></li>
+                                <li><a href="http://transparencia.gov.br/sancoes/acordos-leniencia" onclick="window.open('/sancoes/acordos-leniencia', '_self')">Acordos de leniência</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li role="menuitem" aria-haspopup="true" class="has-submenu">
+                    <a href="#">Controle social</a>
+                    <ul role="menu" aria-hidden="true" aria-haspopup="true" class="is-submenu">
+                        <li role="menuitem"><a href="http://transparencia.gov.br/brasiltransparente" onclick="window.open('/brasiltransparente', '_self')">Escala Brasil Transparente - Avaliação 360°</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/pagina-interna/603399-controle-social" onclick="window.open('/pagina-interna/603399-controle-social', '_self')">Controle social</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/controle-social/o-portal-como-ferramenta" onclick="window.open('/controle-social/o-portal-como-ferramenta', '_self')">O Portal como ferramenta</a></li>
+                        <li role="menuitem"><a href="http://www.acessoainformacao.gov.br/" onclick="window.open('http://www.acessoainformacao.gov.br/', '_self')">Acesso à informação</a></li>
+                        <li role="menuitem"><a href="http://governoaberto.cgu.gov.br/" onclick="window.open('http://governoaberto.cgu.gov.br/', '_self')">Governo Aberto</a></li>
+                    </ul>
+                </li>
+                <li role="menuitem"><a href="http://transparencia.gov.br/redetransparencia" onclick="window.open('/redetransparencia', '_self')">Rede de Transparência</a></li>
+                <li role="menuitem"><a href="http://transparencia.gov.br/notificacoes" onclick="window.open('/notificacoes', '_self')">Receba Notificações</a></li>
+                <li role="menuitem" aria-haspopup="true" class="has-submenu">
+                    <a href="#">Aprenda mais</a>
+                    <ul role="menu" aria-hidden="true" aria-haspopup="true" class="is-submenu">
+                        <li role="menuitem" class="has-submenu submenu--right" aria-haspopup="true">
+                            <a href="#">Entenda a gestão pública</a>
+                            <ul role="menu" aria-hidden="true">
+                                <li><a href="http://transparencia.gov.br/entenda-a-gestao-publica/orcamento-publico" onclick="window.open('/entenda-a-gestao-publica/orcamento-publico', '_self')">Orçamento público</a></li>
+                                <li><a href="http://transparencia.gov.br/entenda-a-gestao-publica/execucao-receita-publica" onclick="window.open('/entenda-a-gestao-publica/execucao-receita-publica', '_self')">Execução da receita pública</a></li>
+                                <li><a href="http://transparencia.gov.br/entenda-a-gestao-publica/execucao-despesa-publica" onclick="window.open('/entenda-a-gestao-publica/execucao-despesa-publica', '_self')">Execução da despesa pública</a></li>
+                                <li><a href="http://transparencia.gov.br/entenda-a-gestao-publica/programas-de-governo" onclick="window.open('/entenda-a-gestao-publica/programas-de-governo', '_self')">Programas de Governo</a></li>
+                                <li><a href="http://transparencia.gov.br/entenda-a-gestao-publica/beneficios-ao-cidadao" onclick="window.open('/entenda-a-gestao-publica/beneficios-ao-cidadao', '_self')">Benefícios ao cidadão</a></li>
+                                <li><a href="http://transparencia.gov.br/entenda-a-gestao-publica/servidores-publicos" onclick="window.open('/entenda-a-gestao-publica/servidores-publicos', '_self')">Servidores públicos</a></li>
+                                <li><a href="http://transparencia.gov.br/entenda-a-gestao-publica/licitacoes-e-contratacoes" onclick="window.open('/entenda-a-gestao-publica/licitacoes-e-contratacoes', '_self')">Licitações e contratações</a></li>
+                                <li><a href="http://transparencia.gov.br/entenda-a-gestao-publica/convenios-e-outros-acordos" onclick="window.open('/entenda-a-gestao-publica/convenios-e-outros-acordos', '_self')">Convênios e outros acordos</a></li>
+                                <li><a href="http://transparencia.gov.br/entenda-a-gestao-publica/sancoes-aplicadas" onclick="window.open('/entenda-a-gestao-publica/sancoes-aplicadas', '_self')">Sanções aplicadas</a></li>
+                                <li><a href="http://transparencia.gov.br/pagina-interna/603238-gastos-diretos-x-transferencias-de-recursos" onclick="window.open('/pagina-interna/603238-gastos-diretos-x-transferencias-de-recursos', '_self')">Transferências de Recursos </a></li>
+                                <li><a href="http://transparencia.gov.br/pagina-interna/603242-cartao-de-pagamento-do-governo-federal" onclick="window.open('/pagina-interna/603242-cartao-de-pagamento-do-governo-federal', '_self')">Cartões de Pagamento</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/usando-o-portal" onclick="window.open('/usando-o-portal', '_self')">Usando o portal</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/perguntas-frequentes" onclick="window.open('/perguntas-frequentes', '_self')">Perguntas frequentes</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/glossario" onclick="window.open('/glossario', '_self')">Glossário</a></li>
+                        <li role="menuitem"><a href="http://transparencia.gov.br/videos" onclick="window.open('/videos', '_self')">Vídeos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav></header>
+
+<main role="main">
+<section class="box-identificacao">
+    <div class="container">
+        <span class="breadcrumb">
+                    <strong>Você está aqui:</strong>
+                    <span typeof="v:Breadcrumb">
+                        <a href="http://transparencia.gov.br/" rel="v:url" property="v:title">Início</a>
+                    </span>
+                            <span typeof="v:Breadcrumb"> » <a href="http://transparencia.gov.br/despesas" rel="v:url" property="v:title">Despesas</a></span>
+                            » <strong class="breadcrumb-atual" property="v:title">Recebimento de recursos por favorecido</strong>
+                </span>
+    </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h2>Recebimento de recursos por favorecido</h2>
+                </div>
+                <div class="col-md-3" id="divButtonHeader">
+                        <a href="http://transparencia.gov.br/origem-dos-dados" role="button">Origem dos dados</a>
+                </div>
+            </div>
+        </div>
+</section>
+    <div id="aconteudo" class="container">
+<div class="row">
+    <div class="col-xs-12">
+        <div id="alerts" class="floating-alerts">
+            
+
+
+
+        </div>
+    </div>
+</div>
+    </div>
+
+<div class="container">
+    <div class="row box-tabela-filtro">
+<div id="id-box-filtro" class="box-tabela-filtro-coluna-1 col-sm-2">
+    <div role="form" class="box-tabela-filtro__form-filtro">
+        <div>
+            <legend>Formulário de filtro da tabela</legend>
+            <h3 class="box-tabela-filtro__titulo">Filtro</h3>
+            <button type="button" class="botao-fechar-filtro">
+                <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+            </button>
+            <ul class="box-tabela-filtro__lista-botoes">
+
+        <li>
+        <div class="box-tabela-filtro__gaveta">
+            <button class="box-tabela-filtro__botao" type="button">Período</button>
+            <div class="gaveta">
+                <div class="wrapper-gaveta">
+                    <div class="gaveta__topo">
+                        <button type="button" class="gaveta__botao-voltar">
+                            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                        </button>
+                        <strong>Período</strong>
+
+                    </div>
+                    <div class="gaveta__corpo" data-gaveta-of="">
+                        <div class="floating-alerts alertsGaveta" style="display: none">
+                            <div class="alert alert-warning fade in alert-dismissible" role="alert">
+                                <span></span>
+                            </div>
+                        </div>
+                        <i class="fa fa-circle-o-notch fa-spin loading-grande" style="display:none"></i>
+                <div class="form-group">
+                    <label for="de">Início</label>
+                    <input id="de" name="de" class="form-control datepicker-mesano" placeholder="Informe um mês e ano" value="01/2016" data-descricao-filtro="Período de" data-binder-filtro="mesAnoDe" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label for="ate">Fim</label>
+                    <input id="ate" name="ate" class="form-control datepicker-mesano" placeholder="Informe um mês e ano" value="12/2016" data-descricao-filtro="Período até" data-binder-filtro="mesAnoAte" type="text">
+                </div>
+                            <input value="Adicionar" class="btn-adicionar btn-gaveta-consultar" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </li>
+
+
+            <li>
+        <div class="box-tabela-filtro__gaveta">
+            <button class="box-tabela-filtro__botao" type="button">Nome Favorecido</button>
+            <div class="gaveta">
+                <div class="wrapper-gaveta">
+                    <div class="gaveta__topo">
+                        <button type="button" class="gaveta__botao-voltar">
+                            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                        </button>
+                        <strong>Nome Favorecido</strong>
+
+                            <p>A lista de sugestão apresenta apenas os 
+30 primeiros registros referentes ao filtro informado. Caso não tenha 
+encontrado a informação desejada, especifique melhor sua consulta ou 
+utilize o filtro "Busca livre".</p>
+                    </div>
+                    <div class="gaveta__corpo" data-gaveta-of="">
+                        <div class="floating-alerts alertsGaveta" style="display: none">
+                            <div class="alert alert-warning fade in alert-dismissible" role="alert">
+                                <span></span>
+                            </div>
+                        </div>
+                        <i class="fa fa-circle-o-notch fa-spin loading-grande" style="display:none"></i>
+        <label for="favorecido" class="sr-only">Nome Favorecido</label>
+        <ul class="token-input-list"><li class="token-input-token"><p>13.406.686/0001-67 - SIG SOFTWARE &amp; CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA</p><span class="token-input-delete-token">×</span></li><li class="token-input-input-token"><input autocomplete="off" style="outline: medium none currentcolor;" id="token-input-favorecido" type="text"><tester style="position: absolute; top: -9999px; left: -9999px; width: auto; font-size: 12px; font-family: Verdana, sans-serif; font-weight: 400; letter-spacing: 0px; white-space: nowrap;"></tester></li></ul><input id="favorecido" name="favorecido" value="19239000" placeholder="" data-descricao-filtro="Nome Favorecido" data-autocomplete-tipo="pessoa" data-autocomplete-validator="" data-autocomplete-invaildmessage="" data-autocomplete-maximo-itens="10" data-busca-avancada="" data-outros-parametros="" style="display: none;" type="text">
+        <div class="footer-item-filtro">
+            <p>
+                <small>Máximo 10 itens</small>
+            </p>
+        </div>
+                            <input value="Adicionar" class="btn-adicionar btn-gaveta-consultar" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            </li>
+
+        <li>
+        <div class="box-tabela-filtro__gaveta">
+            <button class="box-tabela-filtro__botao" type="button">CNPJ / CPF / CÓDIGO DO FAVORECIDO</button>
+            <div class="gaveta">
+                <div class="wrapper-gaveta">
+                    <div class="gaveta__topo">
+                        <button type="button" class="gaveta__botao-voltar">
+                            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                        </button>
+                        <strong>CNPJ / CPF / CÓDIGO DO FAVORECIDO</strong>
+
+                    </div>
+                    <div class="gaveta__corpo" data-gaveta-of="">
+                        <div class="floating-alerts alertsGaveta" style="display: none">
+                            <div class="alert alert-warning fade in alert-dismissible" role="alert">
+                                <span></span>
+                            </div>
+                        </div>
+                        <i class="fa fa-circle-o-notch fa-spin loading-grande" style="display:none"></i>
+                <div class="form-group">
+                    <label for="cpfCnpj" class="sr-only">CNPJ / CPF / CÓDIGO DO FAVORECIDO</label>
+                    <input id="cpfCnpj" name="cpfCnpj" data-descricao-filtro="CNPJ / CPF / CÓDIGO DO FAVORECIDO" type="text">
+                </div>
+                            <input value="Adicionar" class="btn-adicionar btn-gaveta-consultar" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </li>
+
+
+        <li>
+        <div class="box-tabela-filtro__gaveta">
+            <button class="box-tabela-filtro__botao" type="button">Tipo de Favorecidos</button>
+            <div class="gaveta">
+                <div class="wrapper-gaveta">
+                    <div class="gaveta__topo">
+                        <button type="button" class="gaveta__botao-voltar">
+                            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                        </button>
+                        <strong>Tipo de Favorecidos</strong>
+
+                    </div>
+                    <div class="gaveta__corpo" data-gaveta-of="tipoFavorecido">
+                        <div class="floating-alerts alertsGaveta" style="display: none">
+                            <div class="alert alert-warning fade in alert-dismissible" role="alert">
+                                <span></span>
+                            </div>
+                        </div>
+                        <i class="fa fa-circle-o-notch fa-spin loading-grande" style="display:none"></i>
+        <select id="tipoFavorecido" name="tipoFavorecido" title="Tipo de Favorecidos" multiple="multiple" data-multiselect-tipo="tipo-pessoa-juridica" data-descricao-filtro="Tipo de Favorecidos" style="display: none">
+        </select><div class="btn-group" style="width: 100%;"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" style="display: none; width: 100%; overflow: hidden; text-overflow: ellipsis;" title="None selected"></button><ul></ul></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </li>
+
+
+        <li>
+        <div class="box-tabela-filtro__gaveta">
+            <button class="box-tabela-filtro__botao" type="button">Órgão</button>
+            <div class="gaveta">
+                <div class="wrapper-gaveta">
+                    <div class="gaveta__topo">
+                        <button type="button" class="gaveta__botao-voltar">
+                            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                        </button>
+                        <strong>Órgão</strong>
+
+                    </div>
+                    <div class="gaveta__corpo" data-gaveta-of="">
+                        <div class="floating-alerts alertsGaveta" style="display: none">
+                            <div class="alert alert-warning fade in alert-dismissible" role="alert">
+                                <span></span>
+                            </div>
+                        </div>
+                        <i class="fa fa-circle-o-notch fa-spin loading-grande" style="display:none"></i>
+        <label for="orgaos" class="sr-only">Órgão</label>
+        <ul class="token-input-list" style="width: 90% !important"><li class="token-input-input-token"><input autocomplete="off" style="outline: medium none currentcolor;" id="token-input-orgaos" placeholder="" type="text"><tester style="position: absolute; top: -9999px; left: -9999px; width: auto; font-size: 12px; font-family: Verdana, sans-serif; font-weight: 400; letter-spacing: 0px; white-space: nowrap;"></tester></li></ul><input id="orgaos" name="orgaos" placeholder="" data-descricao-filtro="Órgão" data-autocomplete-tipo="orgaos/orgao,unidadeGestora,orgaoSuperior" data-autocomplete-validator="" data-autocomplete-invaildmessage="" data-autocomplete-maximo-itens="10" data-busca-avancada="despesas/estrutura-administrativa" data-outros-parametros="" style="width: 90% !important; display: none" type="text">
+        <div class="footer-item-filtro-busca-avancada">
+            <p>
+                <small>Máximo 10 itens</small>
+            </p>
+        </div>
+        <span class="overlay-busca-avancada" data-toggle="tooltip" title="" data-original-title="Busca Avançada">
+            <a id="busca-avancada-orgaos"><i class="fa fa-search-plus"></i></a>
+        </span>
+                            <input value="Adicionar" class="btn-adicionar btn-gaveta-consultar" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </li>
+
+
+        <li>
+        <div class="box-tabela-filtro__gaveta">
+            <button class="box-tabela-filtro__botao" type="button">UF</button>
+            <div class="gaveta">
+                <div class="wrapper-gaveta">
+                    <div class="gaveta__topo">
+                        <button type="button" class="gaveta__botao-voltar">
+                            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                        </button>
+                        <strong>UF</strong>
+
+                    </div>
+                    <div class="gaveta__corpo" data-gaveta-of="uf">
+                        <div class="floating-alerts alertsGaveta" style="display: none">
+                            <div class="alert alert-warning fade in alert-dismissible" role="alert">
+                                <span></span>
+                            </div>
+                        </div>
+                        <i class="fa fa-circle-o-notch fa-spin loading-grande" style="display:none"></i>
+        <select id="uf" name="uf" title="UF" multiple="multiple" data-multiselect-tipo="uf" data-descricao-filtro="UF" style="display: none">
+        </select><div class="btn-group" style="width: 100%;"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" style="display: none; width: 100%; overflow: hidden; text-overflow: ellipsis;" title="None selected"></button><ul></ul></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </li>
+
+
+        <li>
+        <div class="box-tabela-filtro__gaveta">
+            <button class="box-tabela-filtro__botao" type="button">Município</button>
+            <div class="gaveta">
+                <div class="wrapper-gaveta">
+                    <div class="gaveta__topo">
+                        <button type="button" class="gaveta__botao-voltar">
+                            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                        </button>
+                        <strong>Município</strong>
+
+                    </div>
+                    <div class="gaveta__corpo" data-gaveta-of="">
+                        <div class="floating-alerts alertsGaveta" style="display: none">
+                            <div class="alert alert-warning fade in alert-dismissible" role="alert">
+                                <span></span>
+                            </div>
+                        </div>
+                        <i class="fa fa-circle-o-notch fa-spin loading-grande" style="display:none"></i>
+        <label for="municipio" class="sr-only">Município</label>
+        <ul class="token-input-list"><li class="token-input-input-token"><input autocomplete="off" style="outline: medium none currentcolor;" id="token-input-municipio" placeholder="" type="text"><tester style="position: absolute; top: -9999px; left: -9999px; width: auto; font-size: 12px; font-family: Verdana, sans-serif; font-weight: 400; letter-spacing: 0px; white-space: nowrap;"></tester></li></ul><input id="municipio" name="municipio" placeholder="" data-descricao-filtro="Município" data-autocomplete-tipo="municipio" data-autocomplete-validator="" data-autocomplete-invaildmessage="" data-autocomplete-maximo-itens="10" data-busca-avancada="" data-outros-parametros="" style="display: none;" type="text">
+        <div class="footer-item-filtro">
+            <p>
+                <small>Máximo 10 itens</small>
+            </p>
+        </div>
+                            <input value="Adicionar" class="btn-adicionar btn-gaveta-consultar" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </li>
+
+
+        <li>
+        <div class="box-tabela-filtro__gaveta">
+            <button class="box-tabela-filtro__botao" type="button">Valor Recebido</button>
+            <div class="gaveta">
+                <div class="wrapper-gaveta">
+                    <div class="gaveta__topo">
+                        <button type="button" class="gaveta__botao-voltar">
+                            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                        </button>
+                        <strong>Valor Recebido</strong>
+
+                    </div>
+                    <div class="gaveta__corpo" data-gaveta-of="">
+                        <div class="floating-alerts alertsGaveta" style="display: none">
+                            <div class="alert alert-warning fade in alert-dismissible" role="alert">
+                                <span></span>
+                            </div>
+                        </div>
+                        <i class="fa fa-circle-o-notch fa-spin loading-grande" style="display:none"></i>
+                <div class="form-group">
+                    <label for="valorRecebidoDe">De</label>
+                    <input id="valorRecebidoDe" name="valorRecebidoDe" class="mask-real" value="0,00" data-descricao-filtro="Valor recebido de" data-binder-filtro="valor" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="valorRecebidoAte">Até</label>
+                    <input id="valorRecebidoAte" name="valorRecebidoAte" class="mask-real" value="0,00" data-descricao-filtro="Valor recebido até" data-binder-filtro="valor" type="text">
+                </div>
+                            <input value="Adicionar" class="btn-adicionar btn-gaveta-consultar" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </li>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="box-tabela-filtro-coluna-2 col-sm-10">
+
+<button id="idFiltroBotao" class="botao-filtro ativo" type="button"><i class="fa fa-angle-double-left" aria-hidden="true"></i>
+OCULTAR FILTROS DE CONSULTA
+</button>
+
+<section class="box-detalhamento--tipo-b">
+
+<button id="btn-section-filtros-aplicados" class="grafico-tabela__botao-collapse" data-toggle="collapse" data-target="#box-filtros-aplicados-com-botao" aria-expanded="true" type="button">
+    <i class="fa fa-fw fa-minus-square-o"></i>
+    <i class="fa fa-fw fa-plus-square-o"></i>
+    Filtros aplicados:
+</button>
+<div id="box-filtros-aplicados-com-botao">
+    <div id="box-filtros-aplicados" class="box-tabela-completa__tags collapse in"><p>Período de: <span>01/2016 <button type="button" data-valor-filtro="01/2016" data-name-filtro="de"><i class="fa fa-times"></i></button></span></p><p>Período até: <span>12/2016 <button type="button" data-valor-filtro="12/2016" data-name-filtro="ate"><i class="fa fa-times"></i></button></span></p><p>Nome Favorecido: <span>13.406.686/0001-67 - SIG SOFTWARE &amp; CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA <button type="button" data-valor-filtro="19239000" data-name-filtro="favorecido"><i class="fa fa-times"></i></button></span></p></div>
+    <p style="text-align: right">
+        <button type="button" class="btn-consultar btn-filtros-aplicados-consultar" data-toggle="tooltip" data-placement="top" data-original-title="Clique aqui para atualizar o resultado da pesquisa" style="display: none;">Atualizar</button>
+        <button type="button" class="btn-limpar-filtros" data-toggle="tooltip" data-placement="top" data-original-title="Limpar filtros">Limpar</button>
+    </p>
+</div>
+</section>
+
+            <div id="datas" style="margin-bottom: -30px!important;">
+                <strong>Dados atualizados até: </strong>24/06/2019
+            </div>
+
+        <h2 class="box-padrao__titulo--com-margem">Tabela de dados</h2>
+    <div class="grafico-tabela box-tabela-completa">
+
+        <ul class="box-tabela-completa__opcoes">
+            <li><a href="#" role="button" onclick="window.print();"><i class="fa fa-fw fa-print"></i> Imprimir</a></li>
+                <li><a href="#" role="button" id="btnBaixar" data-toggle="modal"><i class="fa fa-fw fa-download"></i> Baixar</a> </li>
+                <li>
+                    <a href="#" role="button" id="ocultar-colunas-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-fw fa-columns"></i>
+                        <span data-toggle="tooltip" data-container="body" title="" data-original-title="Adiciona ou remove a visualização de colunas da tabela somando os valores caso se aplique.">
+                            Remover/Adicionar Colunas
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-agregar-adicionar" aria-labelledby="ocultar-colunas-3"><li><label><input id="marcarDesmarcarAgregarAdicionar" type="checkbox"><b>Marcar/Desmarcar Todas</b></label></li><li><label data-toggle="tooltip" data-placement="top" data-original-title=""><input data-coluna="linkDetalhamento" id="agregar-adicionar-opcao-linkDetalhamento" data-indice="-1" checked="checked" type="checkbox">Detalhar</label></li><li><label data-toggle="tooltip" data-placement="top" data-original-title=""><input data-coluna="mesAno" id="agregar-adicionar-opcao-mesAno" data-indice="-1" checked="checked" type="checkbox">Mês ano</label></li><li><label data-toggle="tooltip" data-placement="top" data-original-title=""><input data-coluna="favorecido" id="agregar-adicionar-opcao-favorecido" data-indice="-1" checked="checked" type="checkbox">Favorecido</label></li><li><label data-toggle="tooltip" data-placement="top" data-original-title=""><input data-coluna="tipoFavorecido" id="agregar-adicionar-opcao-tipoFavorecido" data-indice="-1" checked="checked" type="checkbox">Tipo de Favorecido</label></li><li><label data-toggle="tooltip" data-placement="top" data-original-title=""><input data-coluna="ufFavorecido" id="agregar-adicionar-opcao-ufFavorecido" data-indice="-1" checked="checked" type="checkbox">UF do Favorecido</label></li><li><label data-toggle="tooltip" data-placement="top" data-original-title=""><input data-coluna="municipioFavorecido" id="agregar-adicionar-opcao-municipioFavorecido" data-indice="-1" checked="checked" type="checkbox">Município do Favorecido</label></li><li><label data-toggle="tooltip" data-placement="top" data-original-title=""><input data-coluna="orgaoSuperior" id="agregar-adicionar-opcao-orgaoSuperior" data-indice="-1" type="checkbox">Órgão Superior</label></li><li><label data-toggle="tooltip" data-placement="top" data-original-title=""><input data-coluna="orgaoVinculado" id="agregar-adicionar-opcao-orgaoVinculado" data-indice="-1" type="checkbox">Órgão/Entidade Vinculada</label></li><li><label data-toggle="tooltip" data-placement="top" data-original-title=""><input data-coluna="unidadeGestora" id="agregar-adicionar-opcao-unidadeGestora" data-indice="-1" type="checkbox">Unidade Gestora</label></li><li><label data-toggle="tooltip" data-placement="top" data-original-title=""><input data-coluna="valorRecebido" id="agregar-adicionar-opcao-valorRecebido" data-indice="-1" checked="checked" type="checkbox">Valor Recebido</label></li><li><button type="button" id="btnAgregarAdicionar">Aplicar</button></li></ul>
+                </li>
+                <li>
+                    <a href="http://transparencia.gov.br/despesas" role="button">
+                        <i class="fa fa-fw fa-chevron-circle-left"></i> Painel da Despesa Pública
+                    </a>
+                </li>
+                <li class="pull-right">
+                    <a href="#avisualizacao-grafica" role="button">
+                        <i class="fa fa-fw fa-chevron-circle-down"></i>Visualização gráfica
+                    </a>
+                </li>
+        </ul>
+
+        <div class="wrapper-table">
+
+            <div class="spinner-container loading-grande" id="spinner" style="margin: 50px 50% 500px; display: none;">
+                <i class="fa fa-circle-o-notch fa-spin"></i>
+                <span class="spinner-text" style="font-size: .35em; margin: 10px -110px; display: block; text-align: left; white-space: nowrap;">
+                    Esta consulta pode demorar alguns minutos
+                </span>
+            </div>
+
+            <div id="lista_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="ativo"><div class="double-scroll"><table id="lista" class="dataTable no-footer" role="grid" style="width: 0px; display: table;">
+            <thead><tr role="row"><th class="coluna-livre sorting_disabled" rowspan="1" colspan="1" style="width: 0px;" aria-label="Detalhar">Detalhar</th><th class="coluna-livre sorting_asc" tabindex="0" aria-controls="lista" rowspan="1" colspan="1" style="width: 0px;" aria-sort="ascending" aria-label="Mês ano: Ordenar colunas de forma descendente">Mês ano</th><th class="coluna-livre sorting" tabindex="0" aria-controls="lista" rowspan="1" colspan="1" style="width: 0px;" aria-label="Favorecido: Ordenar colunas de forma ascendente">Favorecido</th><th class="sorting" tabindex="0" aria-controls="lista" rowspan="1" colspan="1" style="width: 0px;" aria-label="Tipo de Favorecido: Ordenar colunas de forma ascendente">Tipo de Favorecido</th><th class="coluna-livre sorting" tabindex="0" aria-controls="lista" rowspan="1" colspan="1" style="width: 0px;" aria-label="UF do Favorecido: Ordenar colunas de forma ascendente">UF do Favorecido</th><th class="coluna-livre sorting" tabindex="0" aria-controls="lista" rowspan="1" colspan="1" style="width: 0px;" aria-label="Município do Favorecido: Ordenar colunas de forma ascendente">Município do Favorecido</th><th class="sorting" tabindex="0" aria-controls="lista" rowspan="1" colspan="1" style="width: 0px;" aria-label="Valor Recebido: Ordenar colunas de forma ascendente">Valor Recebido    <i class="fa fa-question-circle" aria-hidden="true" data-container="body" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-original-title="Somatório dos documentos de despesa emitidos para o favorecido"></i>    </th></tr></thead><tbody><tr role="row" class="odd"><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Detalhar&lt;/strong&gt;"><a href="http://transparencia.gov.br/despesas/recursos-recebidos/favorecido?de=01/01/2016&amp;ate=31/01/2016&amp;faseDespesa=3&amp;tipoFavorecido=2&amp;favorecido=19239000&amp;localidadeFavorecido=18167" class="linkRendered">Detalhar</a></span></td><td class="coluna-livre sorting_1"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Mês ano&lt;/strong&gt;">01/2016</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Favorecido&lt;/strong&gt;">13.406.686/0001-67 - SIG SOFTWARE &amp; CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Tipo de Favorecido&lt;/strong&gt;">Entidades Empresariais Privadas</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;UF do Favorecido&lt;/strong&gt;">RN</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Município do Favorecido&lt;/strong&gt;">NATAL</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Valor Recebido&lt;/strong&gt;">1.895.587,33</span></td></tr><tr role="row" class="even"><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Detalhar&lt;/strong&gt;"><a href="http://transparencia.gov.br/despesas/recursos-recebidos/favorecido?de=01/02/2016&amp;ate=29/02/2016&amp;faseDespesa=3&amp;tipoFavorecido=2&amp;favorecido=19239000&amp;localidadeFavorecido=18167" class="linkRendered">Detalhar</a></span></td><td class="coluna-livre sorting_1"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Mês ano&lt;/strong&gt;">02/2016</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Favorecido&lt;/strong&gt;">13.406.686/0001-67 - SIG SOFTWARE &amp; CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Tipo de Favorecido&lt;/strong&gt;">Entidades Empresariais Privadas</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;UF do Favorecido&lt;/strong&gt;">RN</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Município do Favorecido&lt;/strong&gt;">NATAL</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Valor Recebido&lt;/strong&gt;">478.324,40</span></td></tr><tr role="row" class="odd"><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Detalhar&lt;/strong&gt;"><a href="http://transparencia.gov.br/despesas/recursos-recebidos/favorecido?de=01/03/2016&amp;ate=31/03/2016&amp;faseDespesa=3&amp;tipoFavorecido=2&amp;favorecido=19239000&amp;localidadeFavorecido=18167" class="linkRendered">Detalhar</a></span></td><td class="coluna-livre sorting_1"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Mês ano&lt;/strong&gt;">03/2016</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Favorecido&lt;/strong&gt;">13.406.686/0001-67 - SIG SOFTWARE &amp; CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Tipo de Favorecido&lt;/strong&gt;">Entidades Empresariais Privadas</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;UF do Favorecido&lt;/strong&gt;">RN</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Município do Favorecido&lt;/strong&gt;">NATAL</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Valor Recebido&lt;/strong&gt;">618.161,58</span></td></tr><tr role="row" class="even"><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Detalhar&lt;/strong&gt;"><a href="http://transparencia.gov.br/despesas/recursos-recebidos/favorecido?de=01/04/2016&amp;ate=30/04/2016&amp;faseDespesa=3&amp;tipoFavorecido=2&amp;favorecido=19239000&amp;localidadeFavorecido=18167" class="linkRendered">Detalhar</a></span></td><td class="coluna-livre sorting_1"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Mês ano&lt;/strong&gt;">04/2016</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Favorecido&lt;/strong&gt;">13.406.686/0001-67 - SIG SOFTWARE &amp; CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Tipo de Favorecido&lt;/strong&gt;">Entidades Empresariais Privadas</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;UF do Favorecido&lt;/strong&gt;">RN</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Município do Favorecido&lt;/strong&gt;">NATAL</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Valor Recebido&lt;/strong&gt;">1.535.559,26</span></td></tr><tr role="row" class="odd"><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Detalhar&lt;/strong&gt;"><a href="http://transparencia.gov.br/despesas/recursos-recebidos/favorecido?de=01/05/2016&amp;ate=31/05/2016&amp;faseDespesa=3&amp;tipoFavorecido=2&amp;favorecido=19239000&amp;localidadeFavorecido=18167" class="linkRendered">Detalhar</a></span></td><td class="coluna-livre sorting_1"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Mês ano&lt;/strong&gt;">05/2016</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Favorecido&lt;/strong&gt;">13.406.686/0001-67 - SIG SOFTWARE &amp; CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Tipo de Favorecido&lt;/strong&gt;">Entidades Empresariais Privadas</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;UF do Favorecido&lt;/strong&gt;">RN</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Município do Favorecido&lt;/strong&gt;">NATAL</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Valor Recebido&lt;/strong&gt;">786.075,96</span></td></tr><tr role="row" class="even"><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Detalhar&lt;/strong&gt;"><a href="http://transparencia.gov.br/despesas/recursos-recebidos/favorecido?de=01/06/2016&amp;ate=30/06/2016&amp;faseDespesa=3&amp;tipoFavorecido=2&amp;favorecido=19239000&amp;localidadeFavorecido=18167" class="linkRendered">Detalhar</a></span></td><td class="coluna-livre sorting_1"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Mês ano&lt;/strong&gt;">06/2016</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Favorecido&lt;/strong&gt;">13.406.686/0001-67 - SIG SOFTWARE &amp; CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Tipo de Favorecido&lt;/strong&gt;">Entidades Empresariais Privadas</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;UF do Favorecido&lt;/strong&gt;">RN</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Município do Favorecido&lt;/strong&gt;">NATAL</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Valor Recebido&lt;/strong&gt;">476.228,70</span></td></tr><tr role="row" class="odd"><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Detalhar&lt;/strong&gt;"><a href="http://transparencia.gov.br/despesas/recursos-recebidos/favorecido?de=01/07/2016&amp;ate=31/07/2016&amp;faseDespesa=3&amp;tipoFavorecido=2&amp;favorecido=19239000&amp;localidadeFavorecido=18167" class="linkRendered">Detalhar</a></span></td><td class="coluna-livre sorting_1"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Mês ano&lt;/strong&gt;">07/2016</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Favorecido&lt;/strong&gt;">13.406.686/0001-67 - SIG SOFTWARE &amp; CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Tipo de Favorecido&lt;/strong&gt;">Entidades Empresariais Privadas</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;UF do Favorecido&lt;/strong&gt;">RN</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Município do Favorecido&lt;/strong&gt;">NATAL</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Valor Recebido&lt;/strong&gt;">1.454.890,15</span></td></tr><tr role="row" class="even"><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Detalhar&lt;/strong&gt;"><a href="http://transparencia.gov.br/despesas/recursos-recebidos/favorecido?de=01/08/2016&amp;ate=31/08/2016&amp;faseDespesa=3&amp;tipoFavorecido=2&amp;favorecido=19239000&amp;localidadeFavorecido=18167" class="linkRendered">Detalhar</a></span></td><td class="coluna-livre sorting_1"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Mês ano&lt;/strong&gt;">08/2016</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Favorecido&lt;/strong&gt;">13.406.686/0001-67 - SIG SOFTWARE &amp; CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Tipo de Favorecido&lt;/strong&gt;">Entidades Empresariais Privadas</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;UF do Favorecido&lt;/strong&gt;">RN</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Município do Favorecido&lt;/strong&gt;">NATAL</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Valor Recebido&lt;/strong&gt;">1.533.278,75</span></td></tr><tr role="row" class="odd"><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Detalhar&lt;/strong&gt;"><a href="http://transparencia.gov.br/despesas/recursos-recebidos/favorecido?de=01/09/2016&amp;ate=30/09/2016&amp;faseDespesa=3&amp;tipoFavorecido=2&amp;favorecido=19239000&amp;localidadeFavorecido=18167" class="linkRendered">Detalhar</a></span></td><td class="coluna-livre sorting_1"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Mês ano&lt;/strong&gt;">09/2016</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Favorecido&lt;/strong&gt;">13.406.686/0001-67 - SIG SOFTWARE &amp; CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Tipo de Favorecido&lt;/strong&gt;">Entidades Empresariais Privadas</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;UF do Favorecido&lt;/strong&gt;">RN</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Município do Favorecido&lt;/strong&gt;">NATAL</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Valor Recebido&lt;/strong&gt;">817.148,82</span></td></tr><tr role="row" class="even"><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Detalhar&lt;/strong&gt;"><a href="http://transparencia.gov.br/despesas/recursos-recebidos/favorecido?de=01/10/2016&amp;ate=31/10/2016&amp;faseDespesa=3&amp;tipoFavorecido=2&amp;favorecido=19239000&amp;localidadeFavorecido=18167" class="linkRendered">Detalhar</a></span></td><td class="coluna-livre sorting_1"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Mês ano&lt;/strong&gt;">10/2016</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Favorecido&lt;/strong&gt;">13.406.686/0001-67 - SIG SOFTWARE &amp; CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Tipo de Favorecido&lt;/strong&gt;">Entidades Empresariais Privadas</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;UF do Favorecido&lt;/strong&gt;">RN</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Município do Favorecido&lt;/strong&gt;">NATAL</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Valor Recebido&lt;/strong&gt;">1.315.503,35</span></td></tr><tr role="row" class="odd"><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Detalhar&lt;/strong&gt;"><a href="http://transparencia.gov.br/despesas/recursos-recebidos/favorecido?de=01/11/2016&amp;ate=30/11/2016&amp;faseDespesa=3&amp;tipoFavorecido=2&amp;favorecido=19239000&amp;localidadeFavorecido=18167" class="linkRendered">Detalhar</a></span></td><td class="coluna-livre sorting_1"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Mês ano&lt;/strong&gt;">11/2016</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Favorecido&lt;/strong&gt;">13.406.686/0001-67 - SIG SOFTWARE &amp; CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Tipo de Favorecido&lt;/strong&gt;">Entidades Empresariais Privadas</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;UF do Favorecido&lt;/strong&gt;">RN</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Município do Favorecido&lt;/strong&gt;">NATAL</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Valor Recebido&lt;/strong&gt;">472.372,14</span></td></tr><tr role="row" class="even"><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Detalhar&lt;/strong&gt;"><a href="http://transparencia.gov.br/despesas/recursos-recebidos/favorecido?de=01/12/2016&amp;ate=31/12/2016&amp;faseDespesa=3&amp;tipoFavorecido=2&amp;favorecido=19239000&amp;localidadeFavorecido=18167" class="linkRendered">Detalhar</a></span></td><td class="coluna-livre sorting_1"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Mês ano&lt;/strong&gt;">12/2016</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Favorecido&lt;/strong&gt;">13.406.686/0001-67 - SIG SOFTWARE &amp; CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Tipo de Favorecido&lt;/strong&gt;">Entidades Empresariais Privadas</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;UF do Favorecido&lt;/strong&gt;">RN</span></td><td class=" coluna-livre"><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Município do Favorecido&lt;/strong&gt;">NATAL</span></td><td><span data-toggle="tooltip" data-html="true" title="" data-delay="800" data-original-title="&lt;strong&gt;Valor Recebido&lt;/strong&gt;">2.801.606,84</span></td></tr></tbody></table></div><div class="box-paginacao"><div class="dataTables_paginate paging_simple" id="lista_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="lista_previous"><a href="#" aria-controls="lista" data-dt-idx="0" tabindex="0"><i class="fa fa-fw fa-chevron-left"></i> Anterior</a></li><li class="paginate_button next disabled" id="lista_next"><a href="#" aria-controls="lista" data-dt-idx="1" tabindex="0">Próxima <i class="fa fa-fw fa-chevron-right"></i> </a></li></ul></div><div class="dataTables_length" id="lista_length"><label><select name="lista_length" aria-controls="lista" class="form-control input-sm"><option value="15" selected="selected">Exibir 15 resultados</option><option value="30">Exibir 30 resultados</option><option value="50">Exibir 50 resultados</option></select></label></div><div class="botao__gera_paginacao_completa"><button type="button">Paginação completa</button></div></div></div></div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="baixarModal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span></button>
+                    <div class="modal-title"><span><i class="glyphicon glyphicon-warning-sign"></i> Aviso</span></div>
+                </div>
+                <div class="modal-body">
+                    <div role="form" id="baixarForm">
+                        <div class="form-group">
+                            <p>
+                                O download da tabela de dados é limitado a 1000 registros. Refaça sua consulta utilizando
+                                os filtros disponíveis ou realize o download completo em
+                                <a href="http://transparencia.gov.br/download-de-dados">Sobre o portal &gt; Dados do Portal &gt; Dados abertos</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    $(function(){
+        window.visualizadorGraficoTabela = new VisualizacaoGraficaTabela(springUrl + "despesas/recursos-recebidos")
+    });
+</script>
+    <h2 id="avisualizacao-grafica" class="box-padrao__titulo--com-margem">Visualização gráfica
+        <button class="grafico-visualizar__botao-collapse" data-toggle="collapse" data-target="#box-visualizacao-grafica" aria-expanded="true" aria-controls="box-visualizacao-grafica" type="button">
+            <i class="fa fa-fw fa-minus-square-o"></i>
+            <i class="fa fa-fw fa-plus-square-o"></i>
+        </button>
+    </h2>
+
+    <div id="box-visualizacao-grafica" class="row collapse out in">
+
+        <div class="col-sm-12">
+
+            <p>Crie o gráfico desejado a partir das opções abaixo.</p>
+            <p>Selecione o tipo de dado para agrupamento das informações e o tipo de gráfico desejado e clique no botão "Gerar Gráfico".</p>
+
+            <div class="col-sm-12 col-md-4">
+
+                <div class="box-opcoes-grafico">
+                <p class="box-opcoes-grafico__descricao">
+                    Utilize os campos abaixo para selecionar como deseja visualizar os dados graficamente
+                </p>
+
+                <form class="formulario-selecao-grafico" action="" method="post" onsubmit="return false;">
+                    <fieldset>
+                        <legend>Formulário de seleção de gráficos</legend>
+
+                        <input id="visualizacao-grafica-funcionalidade" value="despesas" type="hidden">
+
+
+                        <div class="form-group">
+                            <label for="visualizacao-grafica-assunto">Tipo de Dados</label>
+                            <select id="visualizacao-grafica-assunto" name="descricao">
+                                    <option value="mesAno" selected="selected">Mês ano</option>
+                                    <option value="tipoFavorecido">Tipo de Favorecido</option>
+                                    <option value="ufFavorecido">UF do favorecido</option>
+                                    <option value="municipioFavorecido">Município do favorecido</option>
+                                    <option value="orgaoSuperior">Órgão superior</option>
+                                    <option value="orgaoVinculado">Órgão/entidade vinculada</option>
+                                    <option value="unidadeGestora">Unidade Gestora</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" style="display: none;">
+                            <label for="visualizacao-grafica-numeral">Valor apresentado</label>
+                            <select id="visualizacao-grafica-numeral" name="numeral">
+                                        <option value="[&quot;valorRecebido&quot;, &quot;moeda&quot;]" selected="selected">Valor Recebido</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="lista-tipos-graficos">Tipo de gráfico</label>
+                            <ul id="lista-tipos-graficos" class="box-opcoes-grafico__lista-graficos">
+                                <li>
+                                    <input id="grafico-pizza" name="grafico" value="grafico-pizza" checked="checked" type="radio">
+                                    <label for="grafico-pizza" class="ativo">PIZZA</label>
+                                </li>
+                                <li>
+                                    <input id="grafico-donut" name="grafico" value="grafico-donut" type="radio">
+                                    <label for="grafico-donut">ROSCA</label>
+                                </li>
+                                <li>
+                                    <input id="grafico-barras-vertical" name="grafico" value="grafico-barras-vertical" type="radio">
+                                    <label for="grafico-barras-vertical">BARRAS</label>
+                                </li>
+                                <li>
+                                    <input id="grafico-treemap" name="grafico" value="grafico-treemap" type="radio">
+                                    <label for="grafico-treemap">TREEMAP</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <input id="btnGerarGrafico" value="Gerar Gráfico" type="submit">
+                    </fieldset>
+                </form>
+            </div>
+            </div>
+
+            <div class="box-opcoes-grafico-visualizador col-sm-12 col-md-8">
+                <i class="fa fa-circle-o-notch fa-spin loading-grande" style="display:none"></i>
+                <div class="box-grafico-donut grafico-tabela proximo-passo-costas" id="grafico-generico">
+                    <div class="proximo-passo__box-titulo">
+                        <h3 class="proximo-passo__titulo"><span id="tituloGrafico">Gráfico</span></h3>
+                    </div>
+
+                    <div class="grafico-modal">
+                        <div class="grafico-receptor"></div>
+                        <div class="grafico-legenda">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 coluna-1"></div>
+                                <div class="col-xs-12 col-sm-6 coluna-2"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grafico-rodape">
+                        <button type="button" class="botao-icone botao-ampliar"><i class="fa fa-expand"></i> Ampliar</button>
+                        <a class="botao-icone botao-incorporar" href="#"><i class="fa fa-code"></i> Incorporar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+</div>
+</main>
+
+
+<div class="sessao-duvidas" id="duvidas">
+    <section class="container">
+        <div class="box-duvidas compacto">
+            <button id="btnDuvidas" type="button" class="box-duvidas__botao-duvida"><i class="fa fa-question-circle"></i> <span>Dúvidas?</span></button>
+
+            <div id="box-duvidas" class="box-duvidas__box">
+                <button id="btnFecharBox" type="button" class="botao-fechar-box-duvidas"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+                <div id="duvida-passo-1" class="passos ativo">
+                    <form class="formulario-duvida" action="#" method="post">
+                        <fieldset>
+                            <legend>Formulário de dúvidas</legend>
+
+                            <label for="duvida-texto">Qual é sua dúvida?</label>
+                            <textarea id="duvida-texto" placeholder="Digite palavras-chaves da sua dúvida" cols="30" rows="10" name="duvida-texto"></textarea>
+
+                            <input id="botaoBuscar" class="duvida-enviar botao-info" value="Prosseguir" type="submit">
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="duvida-passo-2" class="lista-definicao passos">
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    $(function(){
+        var interrogacao = new Interrogacao();
+        interrogacao.inicializar();
+    });
+</script>
+
+
+<div id="divCompartilhar">
+    <div class="box-compartilhe">
+        <div class="container">
+            <ul class="nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#tab-compartilhe" aria-controls="tab-compartilhe" role="tab" data-toggle="tab" aria-expanded="true"><i class="fa fa-share-alt"></i> Compartilhe</a></li>
+                <li role="presentation" class=""><a href="#tab-notificacoes" aria-controls="tab-notificacoes" role="tab" data-toggle="tab" aria-expanded="false"><i class="fa fa-envelope"></i> Receba notificações</a></li>
+                <li role="presentation" class=""><a href="#tab-contato" aria-controls="tab-contato" role="tab" data-toggle="tab" aria-expanded="false"><i class="fa fa-bullhorn"></i> Contato</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="tab-compartilhe">
+                    <div class="box-midias-sociais">
+                        <span class="box-midias-sociais__titulo">Redes sociais</span>
+                        <ul>
+                            <li><a href="javascript:Compartilhar.gerarLinkWhatsapp();" data-action="share/whatsapp/share"><i class="fa fa-whatsapp"></i><span>Whatsapp</span></a></li>
+                            <li><a href="javascript:Compartilhar.gerarLinkFacebook();"><i class="fa fa-facebook-square"></i><span>Facebook</span></a></li>
+                            <li><a href="javascript:Compartilhar.gerarLinkTwitter();"><i class="fa fa-twitter-square"></i><span>Twitter</span></a></li>
+                            <li><a href="javascript:Compartilhar.gerarQRCode();"><i class="fa fa-qrcode"></i><span>QR Code</span></a></li>
+                        </ul>
+                        <div id="divQRCode" style="display:none;"></div>
+                    </div>
+
+                    <div class="busca-simples">
+
+                        <label for="busca-simples-link" class="sr-only">Link</label>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8">
+                                <input id="busca-simples-link" name="link" readonly="readonly" class="input100" type="text">
+                            </div>
+                            <div class="col-xs-12 botoes-compartilhar-link">
+                                <button id="btnGerarLink" type="button" onclick="Compartilhar.encurtarURL(false, true);">Gerar Link</button>
+                                <button id="btnCopiarLink" type="button" onclick="Compartilhar.copiarLink();">Copiar link</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="tab-notificacoes">
+                    <span class="box-compartilhe__titulo">
+                        Gostaria de receber notificações sobre atualizações de dados do Portal da Transparência?
+                        <a href="http://transparencia.gov.br/notificacoes">Cadastre-se aqui</a>.
+                    </span>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="tab-contato">
+                    <span class="box-compartilhe__titulo">Contato</span>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <ul class="box-compartilhe__lista">
+                                <li>
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                    <a href="http://www.acessoainformacao.gov.br/" target="_blank">Faça um pedido de informação para o Governo Federal</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                    <a href="https://sistema.ouvidorias.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=1" target="_blank">Faça uma denúncia</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <ul class="box-compartilhe__lista">
+                                <li><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                    <a href="https://sistema.ouvidorias.gov.br/" target="_blank">Registre suas sugestões, dúvidas e reclamações</a>
+                                </li>
+                                <li><i class="fa fa-question-circle" aria-hidden="true"></i> <a href="http://transparencia.gov.br/redetransparencia" target="_blank">Onde encontrar informações sobre estados e municípios</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <form id="formulario-correcao" class="collapse" action="#" method="post" aria-hidden="true">
+                        <fieldset>
+                            <legend>Formulário de correção</legend>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label for="texto-correcao" class="sr-only">Texto</label>
+                                        <textarea id="texto-correcao" cols="30" rows="10" name="correcao"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <label for="sugestoes-email">Seu e-mail</label>
+
+                            <div class="row">
+                                <div class="col-sm-12 col-md-9">
+                                    <input id="sugestoes-email" name="sugestoes-email" type="text">
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <input value="Enviar correção" type="submit">
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="arodape" role="contentinfo">
+    <section class="container">
+        <button id="botao-rodape" type="button" class="btn btn-primary pull-right">Voltar para o topo <i class="fa fa-chevron-circle-up"></i></button>
+
+        <div class="row">
+            <div class="col-12 col-sm-3">
+                <h2>Principal</h2>
+                <ul role="list">
+                    <li role="listitem"><a href="http://transparencia.gov.br/orgaos">Panorama do Governo Federal</a></li>
+                    <li role="listitem"><a href="http://transparencia.gov.br/despesas">Despesas Públicas</a></li>
+                    <li role="listitem"><a href="http://transparencia.gov.br/funcoes">Áreas de atuação do Governo</a></li>
+                    <li role="listitem"><a href="http://transparencia.gov.br/servidores">Servidores Públicos</a></li>
+                    <li role="listitem"><a href="http://transparencia.gov.br/redetransparencia">Rede de Transparência</a></li>
+                    <li role="listitem"><a href="http://transparencia.gov.br/notificacoes">Receba Notificações</a></li>
+                    <li role="listitem"><a href="http://transparencia.gov.br/download-de-dados">Dados Abertos</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-3">
+                <h2>Educativo</h2>
+                <ul role="list">
+                    <li role="listitem"><a href="http://transparencia.gov.br/sobre/o-que-e-e-como-funciona">O que é e como funciona o Portal</a></li>
+                    <li role="listitem"><a href="http://transparencia.gov.br/sobre/o-que-voce-encontra-no-portal">O que você encontra no Portal</a></li>
+                    <li role="listitem"><a href="http://transparencia.gov.br/entenda-a-gestao-publica/orcamento-publico">Orçamento Público</a></li>
+                    <li role="listitem"><a href="http://transparencia.gov.br/usando-o-portal">Usando o Portal</a></li>
+                    <li role="listitem"><a href="http://transparencia.gov.br/perguntas-frequentes">Perguntas frequentes</a></li>
+                    <li role="listitem"><a href="http://transparencia.gov.br/glossario">Glossário</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-3">
+                <h2>Controle social</h2>
+                <ul role="list">
+                    <li role="listitem"><a href="http://transparencia.gov.br/controle-social/o-portal-como-ferramenta">O Portal como ferramenta</a></li>
+                    <li role="listitem"><a href="http://www.acessoainformacao.gov.br/">Acesso à Informação</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</footer>
+
+<div id="footer-brasil"></div>
+
+<div id="carregando" style="display: none;">
+    Carregando... <i class="fa fa-refresh girar"></i>
+</div>
+
+<!--
+    ARQUIVO ALTERADO CONFORME O AMBIENTE.
+    PARA ADICIONAR NOVOS ARQUIVOS, INCLUIR NO FILTRO E POM.XML
+ -->
+<script type="text/javascript" src="2016_files/forms.js"></script>
+<script type="text/javascript" src="2016_files/masks.js"></script>
+<script type="text/javascript" src="2016_files/jquery_006.js"></script>
+<script type="text/javascript" src="2016_files/jquery_008.js"></script>
+<script type="text/javascript" src="2016_files/jquery_005.js"></script>
+<script type="text/javascript" src="2016_files/speakingurl.js"></script>
+<script type="text/javascript" src="2016_files/purify.js"></script>
+<script type="text/javascript" src="2016_files/cgu.js"></script>
+<script type="text/javascript" src="2016_files/additional-methods.js"></script>
+<script type="text/javascript" src="2016_files/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="2016_files/bootstrap-datepicker_002.js"></script>
+<script type="text/javascript" src="2016_files/bootstrap.js"></script>
+<script type="text/javascript" src="2016_files/interrogacao.js"></script>
+<script type="text/javascript" src="2016_files/compartilhar.js"></script>
+<script type="text/javascript" src="2016_files/jquery_009.js"></script>
+<script type="text/javascript" src="2016_files/jquery_004.js"></script>
+<script type="text/javascript" src="2016_files/jquery_003.js"></script>
+<script type="text/javascript"> var springUrl = "/".split(";")[0]; </script>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9;">
+<![endif]-->
+<script>
+
+    $(function () {
+
+        $(window).load(function () {
+
+
+
+            // FUNÇÃO PARA O COLLAPSE
+            cgu.element.display();
+
+            // FUNÇÃO PARA VALIDAR O FORMULÁRIO
+            forms.form.validate(".form-consulta");
+        });
+
+        cgu.criarDatePickers();
+        cgu.iniciaTipoConteudoEspecifico();
+
+    });
+
+</script>
+
+<!-- Inclusao dos arquivos JavaScript definidos em cada view -->
+    
+    <script type="text/javascript" src="2016_files/baixar.js"></script>
+    <script type="text/javascript" src="2016_files/jquery.js"></script>
+    <script type="text/javascript" src="2016_files/dataTables_002.js"></script>
+    <script type="text/javascript" src="2016_files/datatables.js"></script>
+    <script type="text/javascript" src="2016_files/GridAgrupavel.js"></script>
+    <script type="text/javascript" src="2016_files/jquery_007.js"></script>
+    <script type="text/javascript" src="2016_files/dataTables.js"></script>
+    <link rel="stylesheet" href="2016_files/print-table.css" media="print">
+    <link rel="stylesheet" href="2016_files/select.css" type="text/css">
+<!--
+    ARQUIVO ALTERADO CONFORME O AMBIENTE.
+    PARA ADICIONAR NOVOS ARQUIVOS, INCLUIR NO FILTRO E POM.XML
+ -->
+<script type="text/javascript" src="2016_files/d3.js"></script>
+<script type="text/javascript" src="2016_files/01_graficos.js"></script>
+<script type="text/javascript" src="2016_files/02_graficoBarrasHorizontais.js"></script>
+<script type="text/javascript" src="2016_files/03_graficoBarraHorizontalEmpilhada.js"></script>
+<script type="text/javascript" src="2016_files/04_graficoBarrasVerticais.js"></script>
+<script type="text/javascript" src="2016_files/05_graficoTreeMap.js"></script>
+<script type="text/javascript" src="2016_files/06_graficoPizza.js"></script>
+<script type="text/javascript" src="2016_files/07_graficoBolhas.js"></script>
+<script type="text/javascript" src="2016_files/08_graficoLinhas.js"></script>
+<script type="text/javascript" src="2016_files/09_graficoDesvios.js"></script>
+<script type="text/javascript" src="2016_files/10_tabelaGrafico.js"></script>
+<script type="text/javascript" src="2016_files/11_incorporar.js"></script>
+<script type="text/javascript" src="2016_files/12_mapaBrasil.js"></script>
+<script type="text/javascript" src="2016_files/13_mapaMundi.js"></script>
+<script type="text/javascript" src="2016_files/14_visualizacaoGraficaTabela.js"></script>
+<script type="text/javascript" src="2016_files/15_graficoBarraHorizontalNota.js"></script>    <script>
+            $(function(){
+                Grafico.ampliar();
+            });
+    </script>
+
+<script>
+    var grid;
+    $(function () {
+        grid = new GridAgrupavel({
+            urlBase: springUrl + "despesas/recursos-recebidos"
+            , seletor: "#lista"
+            , ordem: [[1, "asc"]]
+            , colunas: [
+                {name: "linkDetalhamento", data: "linkDetalhamento", title: "Detalhar", className: "coluna-livre", orderable: false, agregar: false,
+                    render: function (data) {
+                        return dataTables.linkQuartoNivelRenderer(springUrl + data, "Detalhar");
+                    }
+                }
+                , {name: "mesAno", data: "mesAno", title: "Mês ano", className: "coluna-livre"}
+                , {name: "favorecido", data: "favorecido", title: "Favorecido", className: "coluna-livre"}
+                , {name: "tipoFavorecido", data: "tipoFavorecido", title: "Tipo de Favorecido"}
+                , {name: "ufFavorecido", data: "ufFavorecido", title: "UF do Favorecido", className: "coluna-livre"}
+                , {name: "municipioFavorecido", data: "municipioFavorecido", title: "Município do Favorecido", className: "coluna-livre"}
+                , {name: "orgaoSuperior", data: "orgaoSuperior", title: "Órgão Superior", className: "coluna-livre", visible:false, prefixo: "OS", obrigatorioSeFiltrado: true}
+                , {name: "orgaoVinculado", data: "orgaoVinculado", title: "Órgão/Entidade Vinculada", className: "coluna-livre", visible:false, prefixo: "OR", obrigatorioSeFiltrado: true}
+                , {name: "unidadeGestora", data: "unidadeGestora", title: "Unidade Gestora", className: "coluna-livre", visible:false, prefixo: "UG", obrigatorioSeFiltrado: true}
+                , {name: "valorRecebido", data: "valorRecebido", title: "Valor Recebido" }
+            ]
+            , tooltips: [
+                { name : "Valor Recebido", data : "Somatório dos documentos de despesa emitidos para o favorecido" }
+            ]
+        });
+    });
+</script>
+
+    <script type="text/javascript" src="2016_files/bootstrap-multiselect.js"></script>
+    <script type="text/javascript" src="2016_files/jquery_002.js"></script>
+    <script type="text/javascript" src="2016_files/moment-with-locales.js"></script>
+    <script type="text/javascript" src="2016_files/filtros.js"></script>
+    <script type="text/javascript" src="2016_files/multiselect.js"></script>
+    <script type="text/javascript" src="2016_files/autocomplete.js"></script>
+    <script type="text/javascript" src="2016_files/validadores.js"></script>
+
+    <link rel="stylesheet" href="2016_files/bootstrap-multiselect.css">
+    <link rel="stylesheet" href="2016_files/token-input.css">
+
+    <script>
+    $(function(){
+        var btnAdicionarEvent = function(e){
+
+            if(Filtros.isCampoDataInvalido(e.target) || Filtros.isAutoCompleteVazio()){
+                return false;
+            }
+            Filtros.atualizarSumario();
+            Filtros.fechaGavetaFiltro();
+            Filtros.exibirBotaoConsulta();
+            Filtros.atualizarBotaoLimparFiltros();
+        };
+
+        var btnConsultarEvent = function(e){
+            Filtros.atualizarSumario();
+            Filtros.exibirMensagemFiltroVazio();
+            grid.consultar();
+        };
+
+        var btnLimparFiltrosEvent = function (e) {
+            Filtros.limparFiltros();
+            Filtros.atualizarSumario();
+            Filtros.exibirBotaoAtualizar();
+        };
+
+        MultiselectAjax.init(btnAdicionarEvent);
+        var autoComplete = new Autocomplete();
+        autoComplete.init();
+        Filtros.incluirComportamentoEnter();
+        $(".btn-adicionar").click(btnAdicionarEvent);
+        $(".btn-consultar").click(btnConsultarEvent);
+        $(".btn-limpar-filtros").click(btnLimparFiltrosEvent);
+        Filtros.exibir();
+        Filtros.marcarBotao();
+        Filtros.atualizarSumario();
+        Filtros.exibirMensagemFiltroVazio();
+        Filtros.escondeFiltroPorPadraoUsuarioMobile();
+    });
+    </script>
+
+
+
+
+<!-- BARRA DO TOPO DO GOVERNO -->
+
+<!--[if (gt IE 8)|(!IE)]> -->
+<!-- <![endif]-->
+
+
+
+<div class="token-input-dropdown" style="display: none;"></div><div class="token-input-dropdown" style="display: none;"></div><div class="token-input-dropdown" style="display: none;"></div></body></html>
